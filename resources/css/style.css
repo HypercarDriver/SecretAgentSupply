@@ -1,5 +1,6 @@
 body {
   font-size: 18px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .container {
@@ -89,6 +90,10 @@ nav >.container >.item {
   padding-top: 3rem;
 }
 
+.product {
+  width: 30%;
+}
+
 .products-container {
   display: flex;
   align-items: center;
@@ -116,4 +121,110 @@ nav >.container >.item {
   padding-top: 0.5em;
   padding-bottom: 0.5rem;
   color: #FFFFFF;
+}
+
+/* Other Info */
+.other-info-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.other-info-container > .info {
+  width: 35%;
+}
+
+.other-info-container > .info > h3 {
+  background-color: #000;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  color: #FFFFFF;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 5rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Modile Styles */
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  
+  .container {
+    width: 100%;
+  }
+  
+  
+  .product {
+    width: 47%;
+  }
+  
+  .glasses {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: contents;
+  }
+  
+  .mobile-menu > .item {
+    text-align: center;
+  }
+  
+  .desktop-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .container {
+    width: 100%;
+  } 
+  
+  .jumbotron {
+    height: 15rem;
+  }
+  
+  .jumbotron-container {
+    padding-top: 10rem;
+  }
+  
+  .jumbotron-content {
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  
+  .jumbotron-content h1 {
+    font-size: 1rem;
+  }
+  
+  .jumbotron-container h4 {
+    font-size: 0.77rem;
+  }
+  
+  .watch {
+    display: none;
+  }
+  
+  .product {
+    width: 90%;
+  }
+  
+  .other-info-container {
+    flex-direction: column;
+  }
+  
+  .other-info-container > .info {
+    width: 90%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
 }
